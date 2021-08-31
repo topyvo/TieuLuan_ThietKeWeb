@@ -1,0 +1,411 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <style type="text/css">
+        .tren {
+            height: 84px;
+            background-color: #333;
+            padding: 20px 81px;
+        }
+
+        .imgtren {
+            height: 44px;
+        }
+
+        .imgtren2 {
+            width: 150px;
+            float: right;
+            margin: -5px 12px 0px 0px;
+        }
+
+        .tren th, td {
+            border: 1px solid white;
+            border-collapse: collapse;
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            color: white;
+            text-align: center;
+        }
+
+        .tren table {
+            float: right;
+            margin: 10px 0px;
+        }
+
+        .menu {
+            height: 52px;
+            background-color: #111;
+            padding: 16px 81px;
+        }
+
+            .menu table {
+                width: 100%;
+                color: white;
+            }
+
+            .menu th {
+                text-align: center;
+                width: 12px;
+            }
+
+            .menu a {
+                color: #ffffffa8;
+            }
+        .menu2 {
+            height: 52px;
+            float: left;
+            width: 100%;
+            background-color: #333333;
+            padding: 12px 81px;
+        }
+            .menu2 h3 {
+                color: #ebebeb;
+                margin: 0px;
+                float: left;
+            }
+            .menu2 button {
+                color: #ebebeb;
+                font-size: 13px;
+                background-color: blue;
+                border: none;
+                width: 60px;
+                border-radius: 13px;
+                float: right;
+                height: 25px;
+            }
+            .menu2 a {
+                color: #ebebeb;
+                float: right;
+                margin: 5px 12px;
+            }
+        .noidung1 {
+            height: 700px;
+            width: 100%;
+            float: left;
+        }
+            .noidung1 img {
+                float: right;
+                margin-top: 40px;
+            }
+        .aa {
+            margin: 280px 0px 0px 400px;
+            float: left;
+            text-align: center;
+        }
+            .aa h1 {
+                font-weight: bold;
+                font-size: 44px;
+            }
+            .aa h5 {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 2.6;
+            }
+        .noidung2 {
+            height: 376px;
+            float: left;
+            background-color: black;
+            width: 100%;
+            padding: 15px 82px;
+        }
+            .noidung2 h2 {
+                color: white;
+                font-weight: bold;
+                float: left;
+            }
+            .noidung2 h4 {
+                font-size: 20px;
+                color: #ffffff9c;
+                line-height: 1.6;
+            }
+            .noidung2 img {
+                float: right;
+                width: 376px;
+                margin-top: -179px;
+            }
+        .noidung3 {
+            padding: 30px 87px;
+            float: left;
+            width: 100%;
+        }
+        .aaa {
+            background-color: #8080801c;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+            .aaa img {
+                height: 305px;
+                width: 583px;
+                border-radius: 6px 0px 0px 6px;
+                margin-left: -14px;
+            }
+            .aaa h2 {
+                font-weight: bolder;
+                margin-left: 25px;
+            }
+            .aaa p {
+            line-height: 1.6;
+            margin: .5em 0;
+            margin-left: 28px;
+            font-size: 18px;
+            }
+        .bbb {
+            height: 405px;
+            background-color: #f1f1f1;
+            float: left;
+            border-radius: 6px;
+            width: 1205px;
+        }
+            .bbb img {
+                width: 405px;
+                float: right;
+                margin-right: -14px;
+            }
+        .bbb h2 {
+            font-weight: bolder;
+            margin-left: 25px;
+        }
+
+        .bbb p {
+            line-height: 1.6;
+            margin: .5em 0;
+            margin-left: 28px;
+            font-size: 18px;
+        }
+        .ab {
+            height: 534px;
+            background-color: #f1f1f1;
+            border-radius: 6px;
+            margin-right: 10px;
+            width: 49%;
+            margin-top: 30px;
+        }
+        .ab h2 {
+            font-weight: bolder;
+            margin-left: 25px;
+        }
+
+        .ab p {
+            line-height: 1.6;
+            margin: .5em 0;
+            margin-left: 28px;
+            font-size: 18px;
+        }
+        .ba {
+            height: 534px;
+            background-color: #f1f1f1;
+            border-radius: 6px;
+            width: 49%;
+            margin-top: 30px;
+            margin-left: 13px;
+        }
+        .ba h2 {
+            font-weight: bolder;
+            margin-left: 25px;
+        }
+
+        .ba p {
+            line-height: 1.6;
+            margin: .5em 0;
+            margin-left: 28px;
+            font-size: 18px;
+        }
+        .ccc {
+            margin-bottom: 50px;
+        }
+        .duoi {
+            float: left;
+            height: 610px;
+            width: 1188px;
+            border-top: 1px solid #80808073;
+            padding: 80px 0px;
+            margin: -35px 0px 0px 74px;
+        }
+
+        .imgduoi {
+            width: 120px;
+        }
+
+        .duoi ul {
+            list-style: none;
+            margin-left: -41px;
+        }
+
+        .imgduoi1 {
+            width: 200px;
+            float: right;
+        }
+
+        .imgduoi2 {
+            width: 346px;
+            float: right;
+        }
+
+        .duoi a {
+            color: black;
+        }
+
+        .col-md-3 {
+            width: 262px;
+        }
+
+        .khac {
+            width: 432px;
+        }
+
+        .ulduoi {
+            font-size: 18px;
+        }
+
+        .pp {
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tren">
+        <a href="Index.html"><img class="imgtren" src="images/logo.webp" /></a>
+        <table style="width:30%">
+            <tr>
+                <th><img class="imgtren2" src="images/a.webp" /></th>
+                <th> <span class="glyphicon glyphicon-earphone"></span> 1900.6626</th>
+                <th style="border: none;"><span class="glyphicon glyphicon-map-marker"></span> Hà Nội</th>
+            </tr>
+        </table>
+    </div>
+    <div class="menu">
+        <table>
+            <tr>
+                <th><a href="Index.html"><img src="images/logo2.jpg" /></a></th>
+                <th><a href="iPhone.html">iPhone</a></th>
+                <th><a href="IPad.html">iPad</a></th>
+                <th><a href="Mac.html">Mac</a></th>
+                <th><a href="Apple Watch.html">Apple Watch</a></th>
+                <th><a href="AirPods.html">AirPods</a></th>
+                <th><a href="PhuKien.html">Phụ Kiện</a></th>
+                <th><a href="DichVu.html">Dịch Vụ</a></th>
+                <th><a href="KhuyenMai.html">Khuyến mại</a></th>
+                <th><span class="glyphicon glyphicon-search"></span></th>
+            </tr>
+        </table>
+    </div>
+    <div class="menu2">
+        <h3>iPhone 12 Pro Max</h3>
+        <button>Mua</button>
+        <a href="#">Thông số kĩ thuật</a>
+        <a href="#">Đánh giá</a>
+        <a href="#">Tổng quan</a>
+    </div>
+    <div class="noidung1">
+        <div class="aa">
+            <h1>Xin chào 5G</h1>
+            <h5>iPhone 12 Pro Max</h5>
+        </div>
+        <img src="images/12pro.webp" />
+    </div>
+    <div class="noidung2">
+        <h2>Màn hình Super Retina XDR 6.7 inch</h2><br /><br /><br /><br />
+        <h4>Ceramic Shield, chất liệu kính bền chắc nhất từng có trên điện<br /> thoại thông minh.</h4>
+        <img src="images/12a.webp" />
+    </div>
+    <div class="noidung3">
+        <div class="row aaa">
+            <div class="col-md-6">
+                <img src="images/12b.webp" />
+            </div>
+            <div class="col-md-6">
+                <h2>A14 Bionic, chip nhanh nhất từng có trên điện thoại thông minh</h2>
+                <p>Mạng 5G cho tốc độ tải xuống siêu nhanh, xem video và nghe nhạc trực tuyến chất lượng cao.</p>
+            </div>
+        </div>
+        <div class="row bbb">
+            <div class="col-md-6">
+                <h2>Hệ thống camera chuyên nghiệp<br /> 12MP</h2><br />
+                <p>Camera Ultra Wide, Wide và Telephoto; phạm vi thu phóng<br /> quang học 5x; chế độ Ban Đêm, Deep Fusion, HDR thông<br /> minh thế hệ 3, Apple ProRAW, và khả năng quay video HDR<br /> Dolby Vision 4K.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/12c.webp" />
+            </div>
+        </div>
+        <div class="row ccc">
+            <div class="col-md-6 ab">
+                <h2>Camera trước TrueDepth 12MP</h2><br />
+                <p>Chế độ Ban Đêm và khả năng quay video HDR Dolby Vision 4K.</p>
+                <img src="images/12d.webp" />
+            </div>
+            <div class="col-md-6 ba">
+                <h2>Khả năng chống nước đạt chuẩn<br /> IP68 đứng đầu thị trường</h2><br />
+                <p>iOS 14 với các tiện ích được thiết kế lại trên Màn Hình Chính, Thư Viện Ứng Dụng hoàn toàn mới, App Clips cùng nhiều tính năng khác.</p>
+                <img src="images/12f.webp" />
+            </div>
+        </div>
+    </div>
+    <div class="duoi">
+        <img class="imgduoi" src="images/logo3.png" /><br /><br />
+        <p>Là chuỗi siêu thị được thành lập từ 2010 tại Hà Nội và thuộc quyền sở hữu của công ty Hesman, ShopDunk chính thức trở thành đại lý ủy quyền Apple (Apple Authorized Reseller) từ tháng<br /> 9/2020. Với kinh nghiệm và đam mê sản phẩm Apple chúng tôi mong muốn đem trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple tới toàn bộ người dùng tại Việt Nam.</p><br /><br />
+        <div class="row">
+            <div class="col-md-3">
+                <ul>
+                    <li><b>Thông tin</b></li>
+                    <a href="#">
+                    <li>Giới thiệu</li></a>
+                    <a href="#">
+                    <li>Khuyến mại</li></a>
+                    <a href="#">
+                    <li>Tuyển dụng</li></a>
+                    <a href="#">
+                    <li>Hệ thống cửa hàng</li></a>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li><b>Chính sách</b></li>
+                    <a href="#">
+                    <li>Chính sách đổi trả</li></a>
+                    <a href="#">
+                    <li>Chính sách bảo mật</li></a>
+                    <a href="#">
+                    <li>Chính sách hoạt động chung</li></a>
+                    <a href="#">
+                    <li>Chính sách trả góp</li></a>
+                    <a href="#">
+                    <li>Chính sách bảo hành</li></a>
+                    <a href="#">
+                    <li>Chính sách ship, COD</li></a>
+                    <a href="#">
+                    <li>Hướng dẫn mua hàng</li></a>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul>
+                    <li><b> Liên hệ </b></li>
+                    <li>Gọi tư vấn</li>
+                    <a href="#">
+                    <li class="ulduoi"><b>1900 6626</b></li></a>
+                </ul>
+                <ul>
+                    <li>KH Doanh nghiệp & Đối tác</li>
+                    <a href="#">
+                    <li class="ulduoi"><b> (Ms. Đặng Hương) </b> </li></a>
+                    <a href="#">
+                    <li class="ulduoi"><b>1972 927 907</b></liclass="ulduoi"></a>
+                </ul>
+            </div>
+            <div class="col-md-3 khac">
+                <img class="imgduoi1" src="images/b.webp" />
+                <img class="imgduoi2" src="images/c.webp" />
+            </div>
+        </div>
+        <p class="pp">© 2021 Công ty CP HESMAN Việt Nam.</p>
+        <p class="pp">Giấy chứng nhận ĐKDN số 0107465657 do Sở kế hoạch và đầu tư thành phố Hà Nội cấp ngày 08 tháng 06 năm 2016. Địa chỉ: Số 76 Thái Hà, Phường Trung Liệt, Quận Đống Đa, Thành phố Hà Nội, Việt Nam. Điện thoại: 0247 305 9999. Email: dac@shopdunk.com . Đại diện pháp luật: PHẠM MẠNH HÒA.</p>
+    </div>
+</body>
+</html>

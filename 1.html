@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <style type="text/css">
+        .tren {
+            height: 90px;
+            background-color: #333;
+            padding: 19px 143px;
+        }
+
+        .imgtren {
+            height: 55px;
+        }
+
+        .imgtren2 {
+            width: 180px;
+            float: right;
+            margin: -5px 12px 0px 0px;
+        }
+
+        .tren th, td {
+            
+            border-collapse: collapse;
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            color: white;
+            text-align: center;
+        }
+
+        .tren table {
+            float: right;
+            margin: 10px 0px;
+        }
+        .menu {
+            height: 61px;
+            background-color: #111;
+            padding: 16px 58px;
+        }
+            .menu img {
+                height: 34px;
+            }
+            .menu table {
+                width: 100%;
+                color: white;
+            }
+
+            .menu th {
+                text-align: center;
+                width: 52px;
+                font-size: 18px;
+            }
+
+            .menu a {
+                color: #ffffffa8;
+            }
+        .imgle {
+            width: 100%;
+            height: 440px;
+        }
+        .cogai {
+            width: 192px;
+            margin-top: 161px;
+        }
+        .changtrai {
+            margin-top: 168px;
+            width: 192px;
+        }
+        .aa {
+            height: 375px;
+            background-color: #faebd787
+        }
+            .aa h3 {
+                font-size: 27px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.6;
+            }
+        .bb {
+            padding: 48px 100px;
+        }
+        .bbb {
+            padding: 73px 125px;
+            
+        }
+        .khung {
+            background-color: rgb(247, 247, 247);
+            border-radius: 72px;
+            width: 510px;
+            height: 543px;
+            padding: 37px 24px;
+        }
+        .a2{
+            text-align:center;
+        }
+            .a2 h2 {
+                color: rgb(0, 0, 0);
+                font-size: 39px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.6;
+            }
+            .sdt {
+                color: rgb(233, 98, 39);
+                font-size: 45px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.6;
+            }
+            .a2 p {
+                color: rgb(0, 0, 0);
+                font-size: 20px;
+                text-align: center;
+                line-height: 1.6;
+            }
+            .a2 button {
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.6;
+                background-color: #0c0cd6c7;
+                border: none;
+                width: 200px;
+                margin-top: 67px;
+                border-radius: 19px;
+            }
+        
+        .iii {
+            width:88px;
+        }
+        .iiii {
+            width: 52px;
+        }
+        .fc {
+            color: rgb(0, 114, 227);
+            font-size: 45px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .xe{width:71px;}
+        .vi{width:74px;}
+        .ul1 {
+            margin-left: 58px;
+            width: 72%;
+            margin-top: 64px;
+            font-size: 23px;
+        }
+        .khung li {
+            padding: 7px 0px;
+        }
+        .ul2 {
+            margin-left: 102px;
+            width: 57%;
+            margin-top: 22px;
+            font-size: 23px;
+        }
+        .cc {
+            height: 556px;
+            background-color: #faebd787
+        }
+        .i2 {
+            width: 685px;
+            margin-top: 128px;
+        }
+        .aii {
+            padding: 55px 153px 0px 80px;
+        }
+            .aii p {
+                font-family: "Roboto", sans-serif;
+                color: rgb(0, 0, 0);
+                font-size: 30px;
+                text-align: center;
+                line-height: 1.6;
+            }
+        .form-control {
+            height: 39px;
+            border-radius: 9px;
+        }
+        .aii button {
+            font-family: "Open Sans", sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            text-align: center;
+            line-height: 1.6;
+            background-color: blue;
+            border: none;
+            border-radius: 25px;
+            width: 205px;
+            margin-left: 127px;
+        }
+        .noidung1 {
+            padding: 0px 143px;
+        }
+            .noidung1 h1 {
+                color: rgb(0, 0, 0);
+                font-size: 45px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.6;
+            }
+            .noidung1 p {
+                color: rgb(0, 0, 0);
+                font-size: 20px;
+                text-align: center;
+                line-height: 1.6;
+                margin-left: -37px;
+            }
+            .noidung1 h2 {
+                color: rgb(0, 0, 0);
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.6;
+            }
+        .hinh img{
+            width:81px;
+        }
+        .hinh {
+            padding: 12px 301px;
+        }
+        .noidung8 {
+            float: left;
+            height: 755px;
+            width: 100%;
+            background-color: rgb(250, 250, 250);
+            padding: 0px 250px;
+        }
+
+            .noidung8 h1 {
+                text-align: center;
+            }
+
+            .noidung8 p {
+                font-size: 16px;
+            }
+
+            .noidung8 span {
+                color: rgb(232, 58, 48);
+            }
+
+            .noidung8 b {
+                color: rgb(22, 99, 199);
+                font-weight: bold;
+            }
+
+            .noidung8 h2 {
+                font-weight: bold;
+            }
+
+        .ss {
+            color: rgb(232, 58, 48);
+            font-weight: bold;
+        }
+        .duoi {
+            height: 610px;
+            width: 1188px;
+            border-top: 1px solid #80808073;
+            padding: 80px 0px;
+            margin: 0px auto;
+        }
+
+        .imgduoi {
+            width: 120px;
+        }
+
+        .duoi ul {
+            list-style: none;
+            margin-left: -41px;
+        }
+
+        .imgduoi1 {
+            width: 200px;
+            float: right;
+        }
+
+        .imgduoi2 {
+            width: 346px;
+            float: right;
+        }
+
+        .duoi a {
+            color: black;
+        }
+
+        .col-md-3 {
+            width: 262px;
+        }
+
+        .khac {
+            width: 432px;
+        }
+
+        .ulduoi {
+            font-size: 18px;
+        }
+        .pp {
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="noidung">
+        <div class="tren">
+            <a href="Index.html"><img class="imgtren" src="images/logo.webp" /></a>
+            <table style="width:30%">
+                <tr>
+                    <th><img class="imgtren2" src="images/a.webp" /></th>
+                    <th style="font-size: 20px;"> <span class="glyphicon glyphicon-earphone"></span> 1900.6626</th>
+                </tr>
+            </table>
+        </div>
+        <div class="menu">
+            <table>
+                <tr>
+                    <th><a href="Index.html"><img src="images/logo2.jpg" /></a></th>
+                    <th><a href="iPhone.html">iPhone</a></th>
+                    <th><a href="IPad.html">iPad</a></th>
+                    <th><a href="Mac.html">Mac</a></th>
+                    <th><a href="Apple Watch.html">Apple Watch</a></th>
+                    <th><a href="AirPods.html">AirPods</a></th>
+                    <th><a href="PhuKien.html">Phụ Kiện</a></th>
+                    <th><a href="DichVu.html">Dịch Vụ</a></th>
+                    <th><a href="KhuyenMai.html">Khuyến mại</a></th>
+                </tr>
+            </table>
+        </div>
+        <img class="imgle" src="images/h1.webp" />
+        <div class="row aa">
+            <div class="col-md-2">
+                <img class="cogai" src="images/cogai.png" />
+            </div>
+            <div class="col-md-8 bb">
+                <h3>Giúp mọi người dễ dàng sở hữu thiết bị Apple để làm việc từ xa, giải trí tại nhà hay học online trong giai đoạn phòng chống Covid - 19, ShopDunk đem tới cách thức mua sắm đa kênh thuận tiện, linh hoạt và an toàn.</h3>
+            </div>
+            <div class="col-md-2">
+                <img class="changtrai" src="images/changtrai.png" />
+            </div>
+        </div>
+        <div class="row bbb">
+            <div class="col-md-6 a2">
+                <div class="khung">
+                    <img class="iiii" src="images/dt.png" />
+                    <h2>Đặt hàng qua</h2>
+                    <b class="sdt">1900.6626</b>
+                    <p>Khách hàng đặt mua trực tiếp qua số hotline 1900.6626 hoặc từng chi nhánh. Nhận hàng tại cửa hàng ShopDunk gần nhất hoặc tại nhà. Áp dụng với tất cả thiết bị Apple, phụ kiện và dịch vụ phần mềm.</p>
+                    <button>GỌI NGAY</button>
+                </div>
+            </div>
+            <div class="col-md-6 a2">
+                <div class="khung">
+                    <img class="iii" src="images/mt.png" />
+                    <h2>Đặt hàng qua</h2>
+                    <b class="fc">Facebook</b>
+                    <p>Khách hàng có thể liên hệ 24/7, để lại lời nhắn trên Fanpage ShopDunk. Tư vấn viên sẽ giúp khách hàng chọn lựa, đặt hàng sản phẩm và dịch vụ Apple theo đúng nhu cầu.</p>
+                    <button>THEO DÕI NGAY</button>
+                </div>
+            </div>
+        </div>
+        <div class="row bbb">
+            <div class="col-md-6 a2">
+                <div class="khung">
+                    <img class="xe" src="images/xe.png" />
+                    <h2>Cửa hàng trực tuyến</h2>
+                    <ul class="ul1">
+                        <li>Website: shopdunk.com > </li>
+                        <li>Cửa hàng trên Shoppee ></li>
+                        <li>Cửa hàng trên Tiki > </li>
+                        <li>Cửa hàng trên Lazada > </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-md-6 a2">
+                <div class="khung">
+                    <img class="vi" src="images/vi.png" />
+                    <h2>Hình thức thanh toán</h2>
+                    <ul class="ul2">
+                        <li>Trả thẳng</li>
+                        <li>Trả góp</li>
+                        <li>Chuyển khoản online </li>
+                        <li>Ví điện tử</li>
+                        <li>COD</li>
+                        <li>Thẻ tín dụng</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row cc">
+            <div class="col-md-6">
+                <img class="i2" src="images/sssss.png" />
+            </div>
+            <div class="col-md-6 aii">
+                <p>
+                    Bạn muốn nhận thông tin
+                    khuyến mại đặc biệt và tư vấn
+                </p>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="Họ và tên" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="Số điện thoại" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="Email (nếu có)" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" value="Sản phẩm và dịch vụ bạn quan tâm" />
+                </div>
+                <button>Để lại thông tin</button>
+            </div>
+        </div>
+        <div class="noidung1">
+            <h1>Yêu Apple, đến ShopDunk</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/a1.jpg" />
+                    <p>Không gian trải nghiệm Apple theo tiêu chuẩn toàn cầu</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/a2.jpg" />
+                    <p>Chất lượng sản phẩm và dịch vụ Apple hàng đầu</p>
+                </div>
+                <h2>Đăng ký và cập nhật thông tin ShopDunk</h2>
+            </div>
+            <div class="row hinh">
+                <div class="col-md-4"><img src="images/fc.png" /></div>
+                <div class="col-md-4"><img src="images/yt.png" /></div>
+                <div class="col-md-4"><img src="images/tt.png" /></div>
+            </div>
+        </div>
+        <div class="noidung8">
+            <h1>Danh sách 19 cửa hàng toàn quốc</h1>
+            <h2>Hà Nội</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>02 HÀNG BÀI - <span class="ss">Apple Mono Store</span><br />CSKH: <b>0981.001.030</b></p>
+                    <p>
+                        12 LÁNG HẠ<br />
+                        CSKH: <b>0981.004.560</b>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        143 THÁI HÀ<br />
+                        CSKH: <b>0981.166.641</b>
+                    </p>
+                    <p>
+                        254 CẦU GIẤY<br />
+                        CSKH: <b>0981.166.642</b>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        76 THÁI HÀ<br />
+                        CSKH: <b>0981.000.915</b>
+                    </p>
+                    <p>
+                        414 NGUYỄN TRÃI<br />
+                        CSKH: <b>0981.166.658</b>
+                    </p>
+                </div>
+            </div><br /><br />
+            <h2>Hồ Chí Minh</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                        467 QUANG TRUNG, GÒ VẤP<br />
+                        CSKH: <b>0961.960.008</b>
+                    </p>
+                    <p>
+                        201 N.T.M.KHAI, Q1<br />
+                        CSKH: <b>0981.676.753</b><br />
+                        <span>[MỚI KHAI TRƯƠNG]</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        133 ĐƯỜNG 3/2, Q.10<br />
+                        CSKH: <b>0949.742.654</b>
+                    </p>
+                    <p>
+                        392 HOÀNG DIỆU, Q4<br />
+                        CSKH: <b>0981.988.671</b><br />
+                        <span>[MỚI KHAI TRƯƠNG]</span>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        120 PHAN ĐĂNG LƯU, P.NHUẬN<br />
+                        CSKH: <b>0981.988.675</b><br />
+                        <span>[MỚI KHAI TRƯƠNG]</span>
+                    </p>
+                </div>
+            </div><br /><br />
+            <h2>Tỉnh thành khác</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                        116 BIÊN HOÀ, HÀ NAM<br />
+                        CSKH: <b>0981.166.670</b>
+                    </p>
+                    <p>
+                        NGÃ 3 ĐƯỜNG CHÁNH, HẢI HẬU<br />
+                        CSKH: <b>0981.166.652</b><br />
+                    </p>
+                    <p>
+                        85 N.T.MINH KHAI, TP VINH<br />
+                        CSKH: <b>0981.166.632</b><br />
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        1019 T.H.ĐẠO, TP NINH BÌNH<br />
+                        CSKH: <b>0981.166.629</b>
+                    </p>
+                    <p>
+                        39B ĐẠI LỘ HCM, TP HẢI DƯƠNG<br />
+                        CSKH: <b>0981.166.636</b>
+                    </p>
+                    <p>
+                        58 NGUYỄN VĂN LINH, ĐÀ NẴNG<br />
+                        CSKH: <b>0981.00.55.92</b>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        256 T.H.Đ, TP NAM ĐỊNH<br />
+                        CSKH: <b>0981.166.645</b>
+                    </p>
+                    <p>
+                        8 SHOPHOUSE VINCOM, TP.TB<br />
+                        CSKH: <b>0981.166.650</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="duoi">
+            <img class="imgduoi" src="images/logo3.png" /><br /><br />
+            <p>Là chuỗi siêu thị được thành lập từ 2010 tại Hà Nội và thuộc quyền sở hữu của công ty Hesman, ShopDunk chính thức trở thành đại lý ủy quyền Apple (Apple Authorized Reseller) từ tháng<br /> 9/2020. Với kinh nghiệm và đam mê sản phẩm Apple chúng tôi mong muốn đem trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple tới toàn bộ người dùng tại Việt Nam.</p><br /><br />
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <li><b>Thông tin</b></li>
+                        <a href="#">
+                        <li>Giới thiệu</li></a>
+                        <a href="#">
+                        <li>Khuyến mại</li></a>
+                        <a href="#">
+                        <li>Tuyển dụng</li></a>
+                        <a href="#">
+                        <li>Hệ thống cửa hàng</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><b>Chính sách</b></li>
+                        <a href="#">
+                        <li>Chính sách đổi trả</li></a>
+                        <a href="#">
+                        <li>Chính sách bảo mật</li></a>
+                        <a href="#">
+                        <li>Chính sách hoạt động chung</li></a>
+                        <a href="#">
+                        <li>Chính sách trả góp</li></a>
+                        <a href="#">
+                        <li>Chính sách bảo hành</li></a>
+                        <a href="#">
+                        <li>Chính sách ship, COD</li></a>
+                        <a href="#">
+                        <li>Hướng dẫn mua hàng</li></a>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li><b> Liên hệ </b></li>
+                        <li>Gọi tư vấn</li>
+                        <a href="#">
+                        <li class="ulduoi"><b>1900 6626</b></li></a>
+                    </ul>
+                    <ul>
+                        <li>KH Doanh nghiệp & Đối tác</li>
+                        <a href="#">
+                        <li class="ulduoi"><b> (Ms. Đặng Hương) </b> </li></a>
+                        <a href="#">
+                        <li class="ulduoi"><b>1972 927 907</b></liclass="ulduoi"></a>
+                    </ul>
+                </div>
+                <div class="col-md-3 khac">
+                    <img class="imgduoi1" src="images/b.webp" />
+                    <img class="imgduoi2" src="images/c.webp" />
+                </div>
+            </div>
+            <p class="pp">© 2021 Công ty CP HESMAN Việt Nam.</p>
+            <p class="pp">Giấy chứng nhận ĐKDN số 0107465657 do Sở kế hoạch và đầu tư thành phố Hà Nội cấp ngày 08 tháng 06 năm 2016. Địa chỉ: Số 76 Thái Hà, Phường Trung Liệt, Quận Đống Đa, Thành phố Hà Nội, Việt Nam. Điện thoại: 0247 305 9999. Email: dac@shopdunk.com . Đại diện pháp luật: PHẠM MẠNH HÒA.</p>
+        </div>
+    </div>
+</body>
+</html>

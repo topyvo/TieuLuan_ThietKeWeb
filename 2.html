@@ -1,0 +1,805 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script/jquery.min.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+    <style type="text/css">
+        .tren {
+            height: 90px;
+            background-color: #333;
+            padding: 19px 143px;
+        }
+
+        .imgtren {
+            height: 55px;
+        }
+
+        .imgtren2 {
+            width: 180px;
+            float: right;
+            margin: -5px 12px 0px 0px;
+        }
+
+        .tren th, td {
+            border-collapse: collapse;
+            border-top: none;
+            border-bottom: none;
+            border-left: none;
+            color: white;
+            text-align: center;
+        }
+
+        .tren table {
+            float: right;
+            margin: 10px 0px;
+        }
+
+        .menu {
+            height: 61px;
+            background-color: #80808026;
+            padding: 16px 306px;
+        }
+            .menu span {
+                font-size: 27px;
+            }
+            .menu table {
+                width: 100%;
+                color: white;
+            }
+
+            .menu th {
+                text-align: center;
+                width: 52px;
+                font-size: 18px;
+            }
+
+            .menu a {
+                color: black;
+            }
+        .imgle{width:100%;}
+        .aii {
+            border-radius: 46px;
+            height: 712px;
+            width: 490px;
+            background-color: #80808012;
+            padding: 20px 30px;
+        }
+        .img11 {
+            width: 115px;
+        }
+        .img12 {
+            width: 415px;
+            margin-left: 13px;
+        }
+        .ndtrong h4 {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .p11 {
+            font-size: 15px;
+            text-align: center;
+            margin: 0px;
+        }
+        .ndtrong strike {
+            font-size: 23px;
+            margin-left: 97px;
+        }
+        .p1 {
+            font-family: "SanFranciscoDisplay-Light.otf";
+            color: rgb(255, 91, 0);
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .p2 {
+            color: rgb(132, 132, 132);
+            font-size: 13px;
+            text-align: center;
+            line-height: 1.4;
+        }
+        .ndtrong i {
+            color: rgb(132, 132, 132);
+            font-size: 13px;
+            text-align: center;
+            margin-left: 31px;
+        }
+        .ndtrong {
+            padding: 0px 54px;
+        }
+            .ndtrong button {
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 1.6;
+                background-color: #240fd4d9;
+                border: none;
+                width: 160px;
+                height: 40px;
+                margin-left: 83px;
+                border-radius: 25px;
+            }
+        .img122 {
+            margin-top: -68px;
+            width: 450px;
+            margin-bottom: -97px;
+        }
+        .row {
+            padding: 94px 179px;
+        }
+        .bb {
+            margin-top: -38px;
+            padding: 0px 179px;
+        }
+        .cc {
+            margin-top: -40px;
+        }
+        .dd {
+            background-color: #80808012;
+            padding: 0px 179px;
+        }
+        .dd h1 {
+            color: rgb(0, 0, 0);
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .dd select {
+            height: 65px;
+            border-radius: 16px;
+            color: #80808085;
+        }
+        .dd input {
+            height: 65px;
+            border-radius: 16px;
+            color: #80808085;
+        }
+            .dd button {
+                height: 65px;
+                border-radius: 42px;
+                color:white;
+                background-color:blue;
+            }
+            .dd p {
+                color: rgb(174, 174, 174);
+                font-size: 14px;
+                text-align: center;
+                line-height: 1.6;
+            }
+        .imgg {
+            width: 648px;
+            margin-top: -117px;
+        }
+        .a4 {
+            width: 330px;
+            border-radius: 37px;
+            height: 471px;
+            background-color: #80808012;
+            margin: 0px 15px;
+        }
+        .imga {
+            width: 329px;
+            height: 281px;
+            margin: -33px 0px 0px -13px;
+        }
+        .td {
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .pthuong {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            text-align: center;
+        }
+        .tien {
+            font-family: "SanFranciscoDisplay-Light.otf";
+            color: rgb(255, 91, 0);
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+        }
+        .ee button {
+            background-color: #240fd4d9;
+            border: none;
+            width: 117px;
+            height: 39px;
+            margin-left: 90px;
+            border-radius: 25px;
+            color:white;
+        }
+        .imgab {
+            width: 200px;
+            height: 201px;
+            margin: 25px 53px;
+        }
+        .ee {
+            padding: 94px 149px;
+        }
+        .ii {
+            padding: 0px 149px 94px;
+            margin-top: -50px;
+        }
+        .ii button {
+            background-color: #240fd4d9;
+            border: none;
+            width: 117px;
+            height: 39px;
+            margin-left: 90px;
+            border-radius: 25px;
+            color: white;
+        }
+        .noidung1 {
+            background-size: contain;
+            background-image: url(images/2may.png);
+            height: 707px;
+        }
+            .noidung1 h1 {
+                color: rgb(255, 255, 255);
+                font-size: 33px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .noidung1 img {
+                width: 90px;
+                margin: 44px 0px -17px 640px;
+            }
+        .noidung2 {
+            background-image: url('images/brrhong.png');
+            height: 415px;
+            background-size: contain;
+            margin-top: 15px;
+        }
+            .noidung2 h3 {
+                color: rgb(255, 255, 255);
+                font-size: 24px;
+                margin: 193px 188px 0px 0px;
+                float: right;
+                line-height: 1.6;
+            }
+        .noidung3 {
+            padding: 0px;
+            margin-top: 15px;
+        }
+        .nd31 {
+            background-color: black;
+            border-radius: 20px;
+            margin-right: 10px;
+            width: 49%;
+        }
+            .nd31 h3 {
+                color: rgb(255, 255, 255);
+                font-size: 21px;
+                line-height: 1.6;
+                width: 55%;
+                float: left;
+                margin: 161px 0px 0px 53px;
+            }
+        .nd32 {
+            background-color: black;
+            border-radius: 20px;
+            width: 49%;
+        }
+            .nd32 img {
+                width: 40%;
+                float: left;
+                height: 407px;
+            }
+            .nd32 h3 {
+                color: rgb(255, 255, 255);
+                font-size: 23px;
+                line-height: 1.6;
+                margin: 147px 0px 0px 286px;
+            }
+        .noidung4 {
+            background-image: url('images/brmay.png');
+            background-size: cover;
+            height: 415px;
+            margin-top: 15px;
+        }
+            .noidung4 h3 {
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                line-height: 1.6;
+                float: left;
+                margin: 148px 0px 0px 81px;
+            }
+        .noidung5{
+            height:200px;
+        }
+        .noidung5 h1 {
+            font-family: "SanFranciscoDisplay-Bold.otf";
+            color: rgb(0, 0, 0);
+            font-size: 41px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.6;
+            margin-top: 50px;
+        }
+        .noidung5 a {
+            color: rgb(0, 114, 227);
+            font-size: 22px;
+            line-height: 1.6;
+            margin-left: 485px;
+        }
+        .noidung6 {
+            background-color: #80808012;
+            padding: 60px 210px;
+        }
+        video {
+            width: 60%;
+            margin: 70px 272px;
+        }
+        .noidung8 {
+            float: left;
+            height: 755px;
+            width: 100%;
+            background-color: rgb(250, 250, 250);
+            padding: 0px 250px;
+        }
+
+            .noidung8 h1 {
+                text-align: center;
+            }
+
+            .noidung8 p {
+                font-size: 16px;
+            }
+
+            .noidung8 span {
+                color: rgb(232, 58, 48);
+            }
+
+            .noidung8 b {
+                color: rgb(22, 99, 199);
+                font-weight: bold;
+            }
+
+            .noidung8 h2 {
+                font-weight: bold;
+            }
+
+        .ss {
+            color: rgb(232, 58, 48);
+            font-weight: bold;
+        }
+
+        .duoi {
+            height: 359px;
+            width: 100%;
+            float: left;
+            padding: 28px 249px;
+        }
+
+            .duoi img {
+                width: 95px;
+                border-radius: 8px;
+                height: 57px;
+            }
+
+            .duoi p {
+                font-size: 13px;
+                text-align: justify;
+            }
+
+            .duoi b {
+                font-weight: bold;
+            }
+
+        .duoi1 {
+            margin: 0px 93px;
+        }
+        .ao{
+            padding:0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tren">
+        <a href="Index.html"><img class="imgtren" src="images/logo.webp" /></a>
+        <table style="width:30%">
+            <tr>
+                <th><img class="imgtren2" src="images/a.webp" /></th>
+                <th style="font-size: 20px;"> <span class="glyphicon glyphicon-earphone"></span> 1900.6626</th>
+            </tr>
+        </table>
+    </div>
+    <div class="menu">
+        <table>
+            <tr>
+                <th><a href="Index.html"><span class="glyphicon glyphicon-home"></span></a></th>
+                <th><a href="iPhone.html">iPhone</a></th>
+                <th><a href="IPad.html">iPad</a></th>
+                <th><a href="Mac.html">Mac</a></th>
+                <th><a href="AirPods.html">AirPods</a></th>
+                <th><a href="PhuKien.html">Phụ Kiện</a></th>
+                <th><a href="DichVu.html">Dịch Vụ</a></th>
+                <th><a href="KhuyenMai.html">Thông Tin</a></th>
+            </tr>
+        </table>
+    </div>
+    <img class="imgle" src="images/h3.webp" />
+    <div class="row">
+        <div class="col-md-6 aii" style="margin-right:40px;">
+            <img class="img11" src="images/bdb.png" /><br /><br /><br />
+            <img class="img12" src="images/imac11.png" />
+            <div class="ndtrong">
+                <h4>iMac 2020 21.5 inch - MHK03</h4>
+                <p class="p11">Chưa Active. Bảo hành 12 tháng tại Apple VN.</p>
+                <strike>24.990.000đ</strike><br />
+                <p class="p1">19.990.000đ</p>
+                <p class="p2">Máy tính để bàn nguyên bộ của Apple với màn hình 21.5 inch. Thiết kế tối giản sang trọng với vi xử lý Intel Core i5, RAM 8GB, bộ nhớ SSD 256GB, camera FaceTime, loa Stereo tích hợp gọn gàng bên trong màn hình vỏ nhôm nguyên khối cao cấp. </p>
+                <i>*Bản đặc biệt không kèm bàn phím và chuột</i><br /><br />
+                <button>MUA NGAY</button>
+            </div>
+        </div>
+        <div class="col-md-6 aii">
+            <img class="img11" src="images/bdb.png" />
+            <img class="img122" src="images/imac12.png" />
+            <div class="ndtrong">
+                <h4>iMac 2020 27 inch - MXWT2</h4>
+                <p class="p11">Chưa Active. Bảo hành 12 tháng tại Apple VN.</p>
+                <strike>41.950.000đ</strike><br />
+                <p class="p1">36.990.000đ</p>
+                <p class="p2">Máy tính để bàn nguyên bộ của Apple với màn hình 5K 27 inch. Thiết kế tối giản sang trọng với vi xử lý Intel Core i5, RAM 8GB, bộ nhớ SSD 256GB, camera FaceTime FullHD, loa Stereo tích hợp bên trong màn hình vỏ nhôm nguyên khối cao cấp. </p>
+                <i>*Bản đặc biệt không kèm bàn phím và chuột</i><br /><br />
+                <button>MUA NGAY</button>
+            </div>
+        </div>
+    </div>
+    <div class="row bb">
+        <div class="col-md-6 aii" style="margin-right:40px;">
+            <img class="img11" src="images/bdb.png" /><br /><br /><br />
+            <img class="img12" src="images/imac11.png" />
+            <div class="ndtrong">
+                <h4>iMac 2020 21.5 inch - MHK23</h4>
+                <p class="p11">Chưa Active. Bảo hành 12 tháng tại Apple VN.</p>
+                <strike>25.990.000₫</strike><br />
+                <p class="p1">19.990.000đ</p>
+                <p class="p2">Máy tính để bàn nguyên bộ của Apple với màn hình 4K 21.5 inch. Thiết kế tối giản sang trọng với vi xử lý Intel Core i3, RAM 8GB, bộ nhớ SSD 256GB, camera FaceTime, loa Stereo tích hợp gọn gàng bên trong màn hình vỏ nhôm nguyên khối cao cấp</p>
+                <i>*Bản đặc biệt không kèm bàn phím và chuột</i><br /><br />
+                <button>MUA NGAY</button>
+            </div>
+        </div>
+        <div class="col-md-6 aii">
+            <img class="img11" src="images/bdb.png" />
+            <img class="img122" src="images/imac12.png" />
+            <div class="ndtrong">
+                <h4>iMac 2020 27 inch - MXWU2</h4>
+                <p class="p11">Chưa Active. Bảo hành 12 tháng tại Apple VN.</p>
+                <strike>45.950.000đ</strike><br />
+                <p class="p1">40.990.000₫</p>
+                <p class="p2">Máy tính để bàn nguyên bộ của Apple với màn hình 5K 27 inch. Thiết kế tối giản sang trọng với vi xử lý Intel Core i5, RAM 8GB, bộ nhớ SSD 512GB, camera FaceTime FullHD, loa Stereo tích hợp bên trong màn hình vỏ nhôm nguyên khối cao cấp. </p>
+                <i>*Bản đặc biệt không kèm bàn phím và chuột</i><br /><br />
+                <button>MUA NGAY</button>
+            </div>
+        </div>
+    </div>
+    <div class="row cc">
+        <div class="col-md-6 aii" style="margin-right:40px;">
+            <img class="img11" src="images/bdb.png" /><br /><br /><br />
+            <img class="img12" src="images/imac11.png" />
+            <div class="ndtrong">
+                <h4>iMac 2020 21.5 inch - MHK33</h4>
+                <p class="p11">Chưa Active. Bảo hành 12 tháng tại Apple VN.</p>
+                <strike>34.490.000₫</strike><br />
+                <p class="p1">28.990.000₫</p>
+                <p class="p2">Máy tính để bàn nguyên bộ của Apple với màn hình 4K 21.5 inch. Thiết kế tối giản sang trọng với vi xử lý Intel Core i5, RAM 8GB, bộ nhớ SSD 256GB, camera FaceTime, loa Stereo tích hợp gọn gàng bên trong màn hình vỏ nhôm nguyên khối cao cấp.</p>
+                <i>*Bản đặc biệt không kèm bàn phím và chuột</i><br /><br />
+                <button>MUA NGAY</button>
+            </div>
+        </div>
+    </div>
+    <div class="row dd">
+        <div class="col-md-6">
+            <h1>THÔNG TIN ĐẶT HÀNG</h1>
+            <div class="form-group">
+                <select class="form-control">
+                    <option value="Sản phẩm iMac bạn muốn mua">Sản phẩm iMac bạn muốn mua</option>
+                    <option value="iMac 2020 21.5 inch - MHK03 : 19.990.000đ">iMac 2020 21.5 inch - MHK03 : 19.990.000đ</option>
+                    <option value="iMac 2020 21.5 inch - MHK23 : 25.990.000đ">iMac 2020 21.5 inch - MHK23 : 25.990.000đ</option>
+                    <option value="iMac 2020 21.5 inch - MHK33 : 28.990.000đ">iMac 2020 21.5 inch - MHK33 : 28.990.000đ </option>
+                    <option value="iMac 2020 27 inch - MXWT2 : 36.990.000đ">iMac 2020 27 inch - MXWT2 : 36.990.000đ</option>
+                    <option value="iMac 2020 27 inch - MXWU2 : 40.990.000đ">iMac 2020 27 inch - MXWU2 : 40.990.000đ</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option value="Phụ kiện đi kèm">Phụ kiện đi kèm</option>
+                    <option value="Combo chuột, bàn phím không dây - 3.990.000đ">Combo chuột, bàn phím không dây - 3.990.000đ</option>
+                    <option value="Chuột không dây - 1.880.000đ">Chuột không dây - 1.880.000đ</option>
+                    <option value="Bàn phím không dây - 2.690.000đ">Bàn phím không dây - 2.690.000đ</option>
+                    <option value="Bảo hành mở rộng chính hãng 3 năm - 2.900.000đ ">Bảo hành mở rộng chính hãng 3 năm - 2.900.000đ </option>
+                    <option value="Microsoft 365 Personal - 990.000đ">Microsoft 365 Personal - 990.000đ</option>
+                    <option value="Microsoft 365 Family- 1.390.000đ">Microsoft 365 Family- 1.390.000đ</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" value="Họ và tên" />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" value="Số điện thoại" />
+            </div>
+            <div class="form-group">
+                <select class="form-control">
+                    <option value="Bạn muốn mua máy ở đâu?">Bạn muốn mua máy ở đâu?</option>
+                    <option value="Hà Nội ">Hà Nội </option>
+                    <option value="Tp. HCM">Tp. HCM</option>
+                    <option value="Tình thành khác">Tình thành khác</option>
+                </select>
+            </div>
+            <button class="form-control">MUA NGAY</button><br />
+            <p>* ShopDunk sẽ liên hệ Quý khách để xác nhận đơn hàng</p>
+        </div>
+        <div class="col-md-6">
+            <img class="imgg" src="images/imacst.png" />
+        </div>
+    </div>
+    <div class="row ee">
+        <div class="col-md-4 a4">
+            <img class="imga" src="images/banphim.png" />
+            <p class="td">Combo chuột, bàn phím không dây</p>
+            <p class="pthuong">Magic Mouse, Magic KeyBoard</p>
+            <p class="tien">3.990.000đ</p>
+            <button>MUA NGAY</button>
+        </div>
+        <div class="col-md-4 a4">
+            <img class="imgab" src="images/chuot.png" />
+            <p class="td">Chuột không dây</p>
+            <p class="pthuong">Magic Mouse 2</p>
+            <p class="tien">1.880.000đ</p>
+            <button>MUA NGAY</button>
+        </div>
+        <div class="col-md-4 a4">
+            <img class="imgab" src="images/banphimm.png" />
+            <p class="td">Bàn phím không dây</p>
+            <p class="pthuong">Magic KeyBoard - MLA22</p>
+            <p class="tien">2.690.000đ</p>
+            <button>MUA NGAY</button>
+        </div>
+    </div>
+    <div class="row ii">
+        <div class="col-md-4 a4">
+            <img class="imga" src="images/vv.png" />
+            <p class="td">Bảo hành mở rộng chính hãng 3 năm</p>
+            <p class="pthuong">AppleCare cho iMac</p>
+            <p class="tien">2.900.000đ</p>
+            <button>MUA NGAY</button>
+        </div>
+        <div class="col-md-4 a4">
+            <img class="imgab" src="images/vvv2.png" />
+            <p class="td">Bộ ứng dụng bản quyền</p>
+            <p class="pthuong">Microsoft 365 Personal</p>
+            <p class="tien">990.000đ</p>
+            <button>MUA NGAY</button>
+        </div>
+        <div class="col-md-4 a4">
+            <img class="imgab" src="images/vvv3.png" />
+            <p class="td">Bộ ứng dụng bản quyền</p>
+            <p class="pthuong">Microsoft 365 Family</p>
+            <p class="tien">1.390.000đ</p>
+            <button>MUA NGAY</button>
+        </div>
+    </div>
+    <div class="noidung1">
+        <img src="images/logoimac.png" />
+        <h1>Sẵn sàng cho những trải nghiệm mới.</h1>
+    </div>
+    <div class="noidung2">
+        <h3>
+            Màn hình tiêu chuẩn Apple kích thước<br />
+            từ 21.5 đến 27 inch
+        </h3>
+    </div>
+    <div class="row noidung3">
+        <div class="col-md-6 nd31">
+            <h3>Thiết kế tối giản sang trọng,vỏ nhôm<br /> nguyên khối cao cấp, cực kỳ gọn gàng</h3>
+            <img src="images/chao.jpg" />
+        </div>
+        <div class="col-md-6 nd32">
+            <img src="images/den.jpg" />
+            <h3>
+                Vi xử lý, camera, loa stereo<br />
+                tích hợp bên trong màn hình<br />
+                với thiết kế cực mỏng
+            </h3>
+        </div>
+    </div>
+    <div class="noidung4">
+        <h3>
+            Tích hợp Wi-Fi, Bluetooth,cổng kết nối<br />
+            đa dạng, chỉ cần đúng một dây nguồn
+        </h3>
+    </div>
+    <div class="noidung5">
+        <h1>YÊU APPLE, ĐẾN SHOPDUNK</h1><br /><br />
+        <a href="#">Tìm hiểu thêm các dòng iMac khác ></a>
+    </div>
+    <div class="noidung6 ">
+        <div id="cc" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner oo">
+                <div class="item active">
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l1.png" />
+                    </a>
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l2.png" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l3.png" />
+                    </a>
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l4.png" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l5.png" />
+                    </a>
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l6.png" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l7.png" />
+                    </a>
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l8.png" />
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l9.png" />
+                    </a>
+                    <a href="#">
+                        <img style="width: 50%; float: left;" src="images/l10.png" />
+                    </a>
+                </div>
+                <a class="left carousel-control" href="#cc" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#cc" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <video controls="controls">
+        <source src="videos/s.mp4" type="video/mp4" />
+    </video>
+    <div class="noidung8">
+        <h1>Danh sách 19 cửa hàng toàn quốc</h1>
+        <h2>Hà Nội</h2>
+        <div class="row ao">
+            <div class="col-md-4">
+                <p>02 HÀNG BÀI - <span class="ss">Apple Mono Store</span><br />CSKH: <b>0981.001.030</b></p>
+                <p>
+                    12 LÁNG HẠ<br />
+                    CSKH: <b>0981.004.560</b>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    143 THÁI HÀ<br />
+                    CSKH: <b>0981.166.641</b>
+                </p>
+                <p>
+                    254 CẦU GIẤY<br />
+                    CSKH: <b>0981.166.642</b>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    76 THÁI HÀ<br />
+                    CSKH: <b>0981.000.915</b>
+                </p>
+                <p>
+                    414 NGUYỄN TRÃI<br />
+                    CSKH: <b>0981.166.658</b>
+                </p>
+            </div>
+        </div><br /><br />
+        <h2>Hồ Chí Minh</h2>
+        <div class="row ao">
+            <div class="col-md-4">
+                <p>
+                    467 QUANG TRUNG, GÒ VẤP<br />
+                    CSKH: <b>0961.960.008</b>
+                </p>
+                <p>
+                    201 N.T.M.KHAI, Q1<br />
+                    CSKH: <b>0981.676.753</b><br />
+                    <span>[MỚI KHAI TRƯƠNG]</span>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    133 ĐƯỜNG 3/2, Q.10<br />
+                    CSKH: <b>0949.742.654</b>
+                </p>
+                <p>
+                    392 HOÀNG DIỆU, Q4<br />
+                    CSKH: <b>0981.988.671</b><br />
+                    <span>[MỚI KHAI TRƯƠNG]</span>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    120 PHAN ĐĂNG LƯU, P.NHUẬN<br />
+                    CSKH: <b>0981.988.675</b><br />
+                    <span>[MỚI KHAI TRƯƠNG]</span>
+                </p>
+            </div>
+        </div><br /><br />
+        <h2>Tỉnh thành khác</h2>
+        <div class="row ao">
+            <div class="col-md-4">
+                <p>
+                    116 BIÊN HOÀ, HÀ NAM<br />
+                    CSKH: <b>0981.166.670</b>
+                </p>
+                <p>
+                    NGÃ 3 ĐƯỜNG CHÁNH, HẢI HẬU<br />
+                    CSKH: <b>0981.166.652</b><br />
+                </p>
+                <p>
+                    85 N.T.MINH KHAI, TP VINH<br />
+                    CSKH: <b>0981.166.632</b><br />
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    1019 T.H.ĐẠO, TP NINH BÌNH<br />
+                    CSKH: <b>0981.166.629</b>
+                </p>
+                <p>
+                    39B ĐẠI LỘ HCM, TP HẢI DƯƠNG<br />
+                    CSKH: <b>0981.166.636</b>
+                </p>
+                <p>
+                    58 NGUYỄN VĂN LINH, ĐÀ NẴNG<br />
+                    CSKH: <b>0981.00.55.92</b>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    256 T.H.Đ, TP NAM ĐỊNH<br />
+                    CSKH: <b>0981.166.645</b>
+                </p>
+                <p>
+                    8 SHOPHOUSE VINCOM, TP.TB<br />
+                    CSKH: <b>0981.166.650</b>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="duoi">
+        <img src="images/logo3.png" /><br /><br />
+        <p>Là chuỗi siêu thị được thành lập từ 2010 tại Hà Nội và thuộc quyền sở hữu của công ty Hesman, ShopDunk chính thức trở thành đại lý ủy quyền Apple (Apple Authorized Reseller) từ tháng 9/2020. Với kinh nghiệm và đam mê sản phẩm Apple chúng tôi mong muốn đem trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple tới toàn bộ người dùng tại Việt Nam.</p>
+        <p>Liên hệ/ Gọi tư vấn:<b>1900.6626</b><br />KH Doanh nghiệp & Đối tác:<b>0972.927.907 (Ms. Hương)</b></p>
+        <div class="duoi1">
+            <p style="font-size: 7px; text-align: center;">© 2016 Công ty CP HESMAN Việt Nam</p>
+            <p style="color: rgb(180, 180, 180); font-size: 7px; text-align: center;">
+                Giấy chứng nhận ĐKDN số 0107465657 do Sở kế hoạch và đầu tư thành phố Hà Nội cấp ngày 08 tháng 06 năm 2016. Địa chỉ: Số 76 Thái Hà, Phường Trung Liệt, Quận Đống Đa, Thành phố Hà Nội, Việt Nam.
+                Điện thoại: 1900.6626. Email: lienhe@shopdunk.com. Đại diện pháp luật: PHẠM MẠNH HÒA
+            </p>
+        </div>
+    </div>
+</body>
+</html>
